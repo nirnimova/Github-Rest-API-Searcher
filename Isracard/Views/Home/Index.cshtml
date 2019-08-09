@@ -1,0 +1,28 @@
+﻿<div class="list-group-item">
+    <span style="font-weight: bolder">Hello {{username}},</span>
+    <div class="list-group-item search-bar">
+        <div class="row">
+            <label for="search">Search Repos:</label>
+        </div>
+        <div class="row">
+            <input id="search" ng-model="search" type="text" enterkey />
+            <button class="btn btn-primary btn-lg" id="searchBtn" ng-click="searchRepos()" ng-disabled="search.length < 3" type="button">&#128269;</button>
+            <button id="my-bookmarks" class="btn-link" ng-click="showBookmarks=true">My Bookmarks</button>
+        </div>
+        <div id="thumbsContainer">
+            <div class="thumbnails" ng-show="!showBookmarks">
+                <div ng-repeat="r in repos" class="thumbnail col-lg-3">
+                    <a href="{{r.html_url}}" target="_blank">{{r.name}}</a>
+                    <input type="checkbox" style="float:right" ng-click="manageBookmark(r)" ng-checked="isBookmark(r)" />
+                    <img style="width:250px;height:250px;" ng-src="{{r.owner.avatar_url}}" />
+                </div>
+            </div>
+            <div class="thumbnails" ng-show="showBookmarks">
+                <div ng-repeat="b in bookmarks" class="thumbnail col-lg-3">
+                    <a href="{{b.url}}" target="_blank">{{b.name}}</a>
+                    <img style="width:250px;height:250px;" ng-src="{{b.avatar}}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

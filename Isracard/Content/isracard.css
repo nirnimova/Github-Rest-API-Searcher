@@ -1,0 +1,47 @@
+﻿body .modal#myModal .modal-dialog form .modal-body {
+    padding: 20px;
+}
+body .modal#myModal .modal-dialog form .modal-footer .alert-danger {
+    float: left;
+    text-align: left;
+}
+body .modal#myModal .modal-dialog form .modal-footer .alert-danger img {
+    padding: 20px 0 20px 20px;
+}
+body .modal#myModal .modal-dialog form .modal-footer .alerts {
+
+    padding: 20px 20px 20px 5px;
+    max-height: 95px;
+    min-height: 95px;
+    min-width: 0;
+}
+body .body-content {
+    margin-top: 50px;
+}
+    body .body-content .search-bar {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin: 50px 150px 0 50px;
+        min-height: 300px;
+    }
+body .body-content .main-div .search-bar .row {
+    padding-left: 200px;
+}
+    body .body-content .main-div .search-bar .row #search {
+        font-size: x-large;
+    }
+    body .body-content .main-div .search-bar .row #searchBtn {
+        font-size: medium;
+        vertical-align: bottom;
+    }
+    body .body-content .main-div .search-bar .thumbnails {
+        margin-top: 100px;
+    }
+    body .body-content .main-div .search-bar .thumbnails .thumbnail {
+        min-height: 260px;
+        min-width: 260px;
+        margin: 15px;
+    }
+    body .body-content .main-div .list-group-item {
+        border: none;
+    }
